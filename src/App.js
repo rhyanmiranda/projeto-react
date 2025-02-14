@@ -8,18 +8,15 @@ const App = () => {
   const teams = [
     {
       name: 'Fúria',
-      icon: 'imagem da Fúria',
-      backgroundColor: '#919191',
+      icon: 'https://upload.wikimedia.org/wikipedia/pt/f/f9/Furia_Esports_logo.png',
     },
     {
       name: 'Mibr',
-      icon: 'imagem da Mibr',
-      backgroundColor: '#787776',
+      icon: 'https://s3.glbimg.com/v1/AUTH_08fb001c60b847468664307c11fa9dc9/public/2021/7/hO4KxL8AV8T4tQNcWZFm.png',
     },
     {
       name: 'Fanatic',
-      icon: 'imagem da Fanatic',
-      backgroundColor: '#fa7123',
+      icon: 'https://upload.wikimedia.org/wikipedia/pt/f/f0/Fnatic_logo.png',
     }
   ]
 
@@ -38,7 +35,6 @@ const App = () => {
         key={team.name}
         teamName={team.name}
         icon={team.icon}
-        backgroundColor={team.backgroundColor}
         players={players.filter(player => player.team === team.name)}
       />)}
     </div>
